@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Enter 1 for Flip coin problem");
+            Console.WriteLine("Enter 2 for check Leap year");
             int choice = Convert.ToInt32(Console.ReadLine());
 
             switch (choice)
@@ -14,6 +15,10 @@
                     int noOfTimes = Convert.ToInt32(Console.ReadLine());
                     Q1_Flip_Coin flip_Coin = new Q1_Flip_Coin();
                     flip_Coin.Flip(noOfTimes);
+                    break;
+                case 2:
+                    Leap_Year leap_Year= new Leap_Year();
+                    leap_Year.Check_Leap_Year();
                     break;
                 default:
                     Console.WriteLine("Enter a valid choice");
