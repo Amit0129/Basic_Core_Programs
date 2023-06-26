@@ -6,7 +6,8 @@
         {
             Console.WriteLine("Enter 1 for Flip coin problem");
             Console.WriteLine("Enter 2 for check Leap year");
-            Console.WriteLine("Enter 3 for find power of 2");
+            Console.WriteLine("Enter 3 for find power of Two");
+            Console.WriteLine("Enter 4 for find Harmonic Number");
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             switch (choice)
@@ -22,6 +23,10 @@
                 case 3:
                     PowerOfTwo powerOfTwo = new PowerOfTwo();
                     powerOfTwo.GetPowerOfTwo();
+                    break;
+                case 4:
+                    HarmonicNumber harmonicNumber = new HarmonicNumber();
+                    harmonicNumber.GetHarmonicNumber();
                     break;
                 default:
                     Console.WriteLine("Enter a valid choice");
