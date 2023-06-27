@@ -8,6 +8,8 @@
             Console.WriteLine("Enter 2 for check Leap year");
             Console.WriteLine("Enter 3 for find power of Two");
             Console.WriteLine("Enter 4 for find Harmonic Number");
+            Console.WriteLine("Enter 5 for find Prime Factor of a number");
+
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             switch (choice)
@@ -27,6 +29,10 @@
                 case 4:
                     HarmonicNumber harmonicNumber = new HarmonicNumber();
                     harmonicNumber.GetHarmonicNumber();
+                    break;
+                case 5:
+                    PrimeFactor primeFactor = new PrimeFactor();
+                    primeFactor.GetPrimeFactor();
                     break;
                 default:
                     Console.WriteLine("Enter a valid choice");
