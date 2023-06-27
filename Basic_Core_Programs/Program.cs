@@ -9,6 +9,7 @@
             Console.WriteLine("Enter 3 for find power of Two");
             Console.WriteLine("Enter 4 for find Harmonic Number");
             Console.WriteLine("Enter 5 for find Prime Factor of a number");
+            Console.WriteLine("Enter 6 for Compute Quotient and Remainder");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -33,6 +34,10 @@
                 case 5:
                     PrimeFactor primeFactor = new PrimeFactor();
                     primeFactor.GetPrimeFactor();
+                    break;
+                case 6:
+                    ComputeQuotientAndRemainder computeQuotientAndRemainder = new ComputeQuotientAndRemainder();
+                    computeQuotientAndRemainder.GetQuotientAndRemainder();
                     break;
                 default:
                     Console.WriteLine("Enter a valid choice");
