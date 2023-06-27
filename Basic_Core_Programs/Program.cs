@@ -13,7 +13,7 @@
             Console.WriteLine("Enter 7 for find number is even or odd");
             Console.WriteLine("Enter 8 for Swap two number");
             Console.WriteLine("Enter 9 for check an Alphabet is Vowel or Consonant");
-
+            Console.WriteLine("Enter 10 for check Largest Among Three Numbers");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -54,6 +54,10 @@
                 case 9:
                     VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
                     vowelOrConsonant.GetVowelOrConsonant();
+                    break;
+                case 10:
+                    LargestAmongThreeNumbers largestAmongThreeNumbers = new LargestAmongThreeNumbers();
+                    largestAmongThreeNumbers.GetLargestAmongThreeNumbers();
                     break;
                 default:
                     Console.WriteLine("Enter a valid choice");
