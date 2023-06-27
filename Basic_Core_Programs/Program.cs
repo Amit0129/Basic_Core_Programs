@@ -12,7 +12,7 @@
             Console.WriteLine("Enter 6 for Compute Quotient and Remainder");
             Console.WriteLine("Enter 7 for find number is even or odd");
             Console.WriteLine("Enter 8 for Swap two number");
-
+            Console.WriteLine("Enter 9 for check an Alphabet is Vowel or Consonant");
 
 
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -50,6 +50,10 @@
                 case 8:
                     SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();
                     swapTwoNumbers.SwapTwoNo();
+                    break;
+                case 9:
+                    VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
+                    vowelOrConsonant.GetVowelOrConsonant();
                     break;
                 default:
                     Console.WriteLine("Enter a valid choice");
