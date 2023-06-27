@@ -10,6 +10,9 @@
             Console.WriteLine("Enter 4 for find Harmonic Number");
             Console.WriteLine("Enter 5 for find Prime Factor of a number");
             Console.WriteLine("Enter 6 for Compute Quotient and Remainder");
+            Console.WriteLine("Enter 7 for find number is even or odd");
+
+
 
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -38,6 +41,10 @@
                 case 6:
                     ComputeQuotientAndRemainder computeQuotientAndRemainder = new ComputeQuotientAndRemainder();
                     computeQuotientAndRemainder.GetQuotientAndRemainder();
+                    break;
+                case 7:
+                    EvenOrOdd evenOrOdd = new EvenOrOdd();
+                    evenOrOdd.GetEvenOrOdd();
                     break;
                 default:
                     Console.WriteLine("Enter a valid choice");
